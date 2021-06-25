@@ -1,8 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  background: get-color('primary-bg');
-  color: get-color('primary-text');
+  background: getColor('primary-bg');
+  color: getColor('primary-text');
 
   font-family: $main-font;
   font-style: normal;
@@ -10,6 +10,10 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+
+  @media (min-width: 800px) {
+    background-color: getColor('secondary-bg');
+  }
 }
 
 // Wrapper

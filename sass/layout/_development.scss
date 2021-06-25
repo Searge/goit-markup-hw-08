@@ -1,4 +1,8 @@
 .development {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+
   padding-top: 0;
 
   &__list {
@@ -28,6 +32,6 @@
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
-    color: get-color-inverted('primary-text');
+    color: getColorInverted('primary-text');
   }
 }
