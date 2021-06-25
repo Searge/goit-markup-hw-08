@@ -6,43 +6,44 @@
     <meta name="viewport" content="width=1600, initial-scale=1.0" />
     <title>WebStudio</title>
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Favicons -->
     <link
+      href="./images/icons/favs/apple-touch-icon.png"
       rel="apple-touch-icon"
       sizes="76x76"
-      href="./images/icons/favs/apple-touch-icon.png"
     />
     <link
-      rel="icon"
       type="image/png"
-      sizes="32x32"
       href="./images/icons/favs/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
     />
     <link
-      rel="icon"
       type="image/png"
-      sizes="16x16"
       href="./images/icons/favs/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
     />
-    <link rel="manifest" href="./images/icons/favs/site.webmanifest" />
+    <link href="./images/icons/favs/site.webmanifest" rel="manifest" />
     <meta name="msapplication-TileColor" content="#2196f3" />
     <meta name="theme-color" content="#2196f3" />
 
     <!-- Site Styles -->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__container container">
         <!-- Logo -->
         <nav class="navigation">
-          <a href="./" class="logo"
+          <a class="logo" href="./"
             ><span class="logo--accent">Web</span>Studio</a
           >
 
@@ -55,7 +56,7 @@
               <a class="menu__link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">Контакты</a>
+              <a class="menu__link" href>Контакты</a>
             </li>
           </ul>
         </nav>
@@ -89,14 +90,14 @@
         <div class="hero__container container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <!-- Order -->
-          <button class="button" type="button" data-open-modal>
+          <button class="button" data-open-modal type="button">
             Заказать услугу
           </button>
         </div>
 
         <div class="backdrop backdrop--is-hidden" data-backdrop>
           <div class="modal" data-modal>
-            <button class="modal__close" type="button" data-close-modal>
+            <button class="modal__close" data-close-modal type="button">
               <!-- Close -->
               <svg class="modal__icon">
                 <use href="./images/icons/sprites.svg#cross"></use>
@@ -114,8 +115,8 @@
                 <div class="order-form__box">
                   <input
                     class="order-form__input"
-                    type="text"
                     name="name"
+                    type="text"
                     autofocus
                   />
                   <!-- Input Icon -->
@@ -128,7 +129,7 @@
                 <p class="order-form__title">Телефон</p>
 
                 <div class="order-form__box">
-                  <input class="order-form__input" type="tel" name="phone" />
+                  <input class="order-form__input" name="phone" type="tel" />
                   <!-- Input Icon -->
                   <svg class="order-form__input-icon">
                     <use href="./images/icons/sprites.svg#phone"></use>
@@ -139,7 +140,7 @@
                 <p class="order-form__title">Почта</p>
 
                 <div class="order-form__box">
-                  <input class="order-form__input" type="email" name="email" />
+                  <input class="order-form__input" name="email" type="email" />
                   <!-- Input Icon -->
                   <svg class="order-form__input-icon">
                     <use href="./images/icons/sprites.svg#email"></use>
@@ -161,16 +162,16 @@
               <label class="order-form__policy">
                 <input
                   class="order-form__checkbox"
-                  type="checkbox"
                   name="policy"
+                  type="checkbox"
                 />
                 <span class="order-form__checkbox-icon"></span>
                 <p class="order-form__text">
                   Соглашаюсь с рассылкой и принимаю
-                  <a class="order-form__link" href="">Условия договора</a>
+                  <a class="order-form__link" href>Условия договора</a>
                 </p>
               </label>
-              <button type="submit" class="button">Отправить</button>
+              <button class="button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -289,28 +290,28 @@
               <p class="team__position">Product Designer</p>
               <ul class="social list">
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#linkedin"></use>
                     </svg>
@@ -324,28 +325,28 @@
               <p class="team__position">Frontend developmenteloper</p>
               <ul class="social list">
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#linkedin"></use>
                     </svg>
@@ -359,28 +360,28 @@
               <p class="team__position">Marketing</p>
               <ul class="social list">
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#linkedin"></use>
                     </svg>
@@ -394,28 +395,28 @@
               <p class="team__position">UI Designer</p>
               <ul class="social list">
                 <li class="social__item">
-                  <a class="social__link" href="">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a class="social__link" href>
                     <svg class="social__icon">
                       <use href="./images/icons/sprites.svg#linkedin"></use>
                     </svg>
@@ -434,42 +435,42 @@
 
           <ul class="partners__list list">
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 1">
+              <a class="partners__link" href aria-label="Partner 1">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 2">
+              <a class="partners__link" href aria-label="Partner 2">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 3">
+              <a class="partners__link" href aria-label="Partner 3">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 4">
+              <a class="partners__link" href aria-label="Partner 4">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 5">
+              <a class="partners__link" href aria-label="Partner 5">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="partners__items">
-              <a class="partners__link" href="" aria-label="Partner 6">
+              <a class="partners__link" href aria-label="Partner 6">
                 <svg class="partners__icon">
                   <use href="./images/icons/sprites.svg#logo-6"></use>
                 </svg>
@@ -485,9 +486,7 @@
       <div class="footer__container container">
         <!-- Address -->
         <div class="address">
-          <a href="" class="logo"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
+          <a class="logo" href><span class="logo--accent">Web</span>Studio</a>
 
           <address class="contacts">
             г. Киев, пр-т Леси Украинки, 26
@@ -510,28 +509,28 @@
           <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="join__social list">
             <li class="join__item">
-              <a class="join__link social__link" href="">
+              <a class="join__link social__link" href>
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link social__link" href="">
+              <a class="join__link social__link" href>
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link social__link" href="">
+              <a class="join__link social__link" href>
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link social__link" href="">
+              <a class="join__link social__link" href>
                 <svg class="social__icon">
                   <use href="./images/icons/sprites.svg#linkedin"></use>
                 </svg>
@@ -546,8 +545,8 @@
           <form class="form-subscribe" name="form-subscribe">
             <input
               class="form-subscribe__input"
-              type="mail"
               name="mail"
+              type="mail"
               placeholder="Email"
             />
             <button class="form-subscribe__button button" type="submit">
