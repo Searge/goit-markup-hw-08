@@ -1,13 +1,13 @@
-@function get-color($key: 'primary-text') {
+@function getColor($key: 'primary-text') {
   @return map-get($colors-main, $key);
 }
 
-@function get-color-inverted($key: 'primary-text') {
+@function getColorInverted($key: 'primary-text') {
   @return map-get($colors-inverted, $key);
 }
 
-@function get-color-alpha($name: 'primary-text', $opacity: 0) {
-  $color: get-color($name);
+@function getColorAlpha($name: 'primary-text', $opacity: 0) {
+  $color: getColor($name);
 
   // Get the named opacity level, if it exists
   @if map-key-exists($colors-opacity, $opacity) {
@@ -16,4 +16,14 @@
 
   // Use rgba() to manipulate the color's alpha level
   @return rgba($color, $opacity);
+}
+
+@function flexElementWidth(
+  $marginValue: 0,
+  $marginsCount: 2,
+  $elementsInString: 0
+) {
+  @return calc(
+    (100% - #{$marginValue} * #{$marginsCount}) / #{$elementsInString}
+  );
 }
