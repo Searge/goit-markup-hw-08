@@ -11,7 +11,10 @@
   }
 
   &__link {
-    color: get-color-inverted('primary-text');
     background: $social-bg;
+  }
+
+  &__link .social__icon {
+    color: get-color-inverted('primary-text');
   }
 }
