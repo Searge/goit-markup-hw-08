@@ -140,7 +140,7 @@ summary {
   display: list-item;
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -162,6 +162,12 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: #f5f4fa;
+  }
 }
 
 .container {
@@ -846,6 +852,12 @@ img {
 
 .development {
   padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .development {
+    display: none;
+  }
 }
 
 .development__list {
