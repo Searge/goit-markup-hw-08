@@ -1,5 +1,5 @@
 .hero {
-  background-color: get-color('ternary-bg');
+  background-color: getColor('ternary-bg');
   background-image: linear-gradient(to bottom, $hero-gradient, $hero-gradient),
     url('../images/hero_bg.jpg');
   background-position: 50% 50%;
@@ -17,7 +17,7 @@
     margin-top: 0;
     margin-bottom: 30px;
     padding: 0;
-    color: get-color-inverted('primary-text');
+    color: getColorInverted('primary-text');
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;

@@ -6,14 +6,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: get-color('primary-text');
+    color: getColor('primary-text');
     // transition: color 250ms $cubic;
     @include transition(color);
   }
 
   &__link:hover,
   &__link:focus {
-    color: get-color('accent');
+    color: getColor('accent');
   }
 
   .header & {

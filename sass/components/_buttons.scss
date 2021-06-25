@@ -5,8 +5,8 @@
   border-radius: 4px;
   border: none;
 
-  background-color: get-color('accent');
-  color: get-color-inverted('primary-text');
+  background-color: getColor('accent');
+  color: getColorInverted('primary-text');
 
   font-family: inherit;
   font-weight: 700;
@@ -20,7 +20,7 @@
 
   &:hover,
   &:focus {
-    background-color: get-color('accent-hover');
+    background-color: getColor('accent-hover');
     box-shadow: 0 4px 4px $shadow-button;
   }
 }

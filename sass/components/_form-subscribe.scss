@@ -18,7 +18,7 @@
   }
 
   &__input:focus {
-    color: get-color('primary-bg');
+    color: getColor('primary-bg');
   }
 
   &__button {
@@ -31,6 +31,6 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    fill: get-color('primary-bg');
+    fill: getColor('primary-bg');
   }
 }

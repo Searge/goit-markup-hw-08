@@ -1,6 +1,6 @@
 .header {
-  color: get-color('ternary-text');
-  border-bottom: 1px solid get-color('border');
+  color: getColor('ternary-text');
+  border-bottom: 1px solid getColor('border');
 
   &__container {
     display: flex;

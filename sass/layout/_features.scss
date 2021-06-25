@@ -4,13 +4,13 @@
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
-    color: get-color('secondary-text');
+    color: getColor('secondary-text');
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: get-color('secondary-text');
+    color: getColor('secondary-text');
   }
 
   &__item {
@@ -32,7 +32,7 @@
     align-items: center;
     width: 270px;
     height: 120px;
-    background-color: get-color('secondary-bg');
+    background-color: getColor('secondary-bg');
     border-radius: 4px;
     margin-bottom: 30px;
   }
