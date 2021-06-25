@@ -1,0 +1,33 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  // Buttons
+  &__btn {
+    min-width: 73px;
+    padding: 6px 22px;
+    background-color: get-color('secondary-bg');
+    color: get-color('secondary-text');
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms $cubic, background-color 250ms $cubic;
+  }
+
+  &__btn--active,
+  &__btn:hover,
+  &__btn:focus {
+    background-color: get-color('accent');
+    color: get-color('primary-bg');
+    box-shadow: 0px 3px 1px $shadow-border, 0px 1px 2px $shadow-08,
+      0px 2px 2px $shadow-12;
+  }
+}

@@ -1,0 +1,17 @@
+.join {
+  width: 206px;
+  margin-right: 93px;
+
+  &__social {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    color: get-color-inverted('primary-text');
+    background: $social-bg;
+  }
+}

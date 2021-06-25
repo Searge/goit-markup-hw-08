@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
+
+  background-color: get-color('accent');
+  color: get-color-inverted('primary-text');
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  // transition: box-shadow 250ms $cubic;
+  @include transition(box-shadow);
+
+  &:hover,
+  &:focus {
+    background-color: get-color('accent-hover');
+    box-shadow: 0 4px 4px $shadow-button;
+  }
+}

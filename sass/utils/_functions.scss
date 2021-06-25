@@ -1,0 +1,19 @@
+@function get-color($key: 'primary-text') {
+  @return map-get($colors-main, $key);
+}
+
+@function get-color-inverted($key: 'primary-text') {
+  @return map-get($colors-inverted, $key);
+}
+
+@function get-color-alpha($name: 'primary-text', $opacity: 0) {
+  $color: get-color($name);
+
+  // Get the named opacity level, if it exists
+  @if map-key-exists($colors-opacity, $opacity) {
+    $opacity: map-get($colors-opacity, $opacity);
+  }
+
+  // Use rgba() to manipulate the color's alpha level
+  @return rgba($color, $opacity);
+}

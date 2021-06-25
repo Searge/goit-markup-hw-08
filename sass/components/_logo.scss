@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &--accent {
+    color: get-color('accent');
+  }
+
+  .navigation & {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .address & {
+    margin-bottom: 20px;
+  }
+}

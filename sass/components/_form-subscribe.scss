@@ -1,0 +1,36 @@
+.form-subscribe {
+  display: flex;
+
+  &__input {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    background-color: transparent;
+    border: 1px solid $border-medium;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px $shadow-button);
+    border-radius: 4px;
+
+    color: $footer-links-color;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &__input:focus {
+    color: get-color('primary-bg');
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 13px 29px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: get-color('primary-bg');
+  }
+}

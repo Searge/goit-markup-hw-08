@@ -1,0 +1,76 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $backdrop-bg;
+  // transition: opacity 250ms $cubic;
+  @include transition(opacity);
+
+  &--is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 528px;
+  height: 581px;
+
+  padding: 40px;
+
+  opacity: 0;
+  transition: opacity 250ms $cubic, transform 250ms $cubic;
+
+  background: get-color('primary-bg');
+  box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14,
+    0px 2px 1px $backdrop-bg;
+  border-radius: 4px;
+
+  &--active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid $shadow-border;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+    fill: get-color('ternary-text');
+  }
+
+  &__close:hover > &__icon,
+  &__close:focus > &__icon {
+    fill: get-color('accent');
+  }
+
+  &__title {
+    display: box;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: get-color('secondary-text');
+    margin-bottom: 12px;
+  }
+}

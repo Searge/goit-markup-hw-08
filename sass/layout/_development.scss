@@ -1,0 +1,33 @@
+.development {
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  // Thumbs
+  &__desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
+    background-color: $dev-bg;
+  }
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: get-color-inverted('primary-text');
+  }
+}

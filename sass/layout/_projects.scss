@@ -1,0 +1,80 @@
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__container {
+    border: 1px solid get-color('border-box');
+    border-top: none;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+
+  &__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  &__item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+
+  // Project text
+  &__title {
+    margin: 0;
+    color: get-color('secondary-text');
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  &__descriptioon {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  // Animation
+  &__about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: $project-accent;
+
+    transform: translateY(100%);
+    opacity: 1;
+
+    transition: transform 250ms $cubic, opacity 250ms $cubic;
+
+    color: get-color-inverted('primary-text');
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  &__item:hover {
+    // transition: box-shadow 250ms $cubic;
+    @include transition(box-shadow);
+
+    box-shadow: 0px 1px 1px $shadow-12, 0px 4px 4px $shadow-06,
+      1px 4px 6px $shadow-16;
+  }
+
+  &__item:hover &__about {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
