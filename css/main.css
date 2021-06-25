@@ -357,6 +357,33 @@ img {
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.button-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button-menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.button-menu .icon-cross {
+  display: none;
+}
+
+.button-menu--is-open .icon-cross {
+  display: block;
+}
+
+.button-menu--is-open .icon-burger {
+  display: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
