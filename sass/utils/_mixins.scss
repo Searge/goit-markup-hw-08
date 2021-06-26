@@ -7,3 +7,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin respond-to-min($breakpoint) {
+  @media screen and (min-width: getWidth($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin respond-to-max($breakpoint) {
+  @media screen and (max-width: getWidth($breakpoint)) {
+    @content;
+  }
+}

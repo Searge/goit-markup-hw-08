@@ -147,13 +147,6 @@ ul {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #fff;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -164,18 +157,29 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 800px) {
-  body {
-    background-color: #f5f4fa;
-  }
-}
-
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 h1,
@@ -231,11 +235,13 @@ img {
   margin-bottom: 20px;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 90px;
+@media screen and (min-width: 1140px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 90px;
+  }
 }
 
 .menu__item:not(:last-child) {
@@ -275,6 +281,46 @@ img {
   opacity: 1;
 }
 
+.menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button:hover, .menu__button:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu .is-open .icon-cross {
+  display: block;
+}
+
+.menu .is-open .icon-burger {
+  display: none;
+}
+
 .contacts {
   font-style: normal;
 }
@@ -293,20 +339,11 @@ img {
   color: #2196f3;
 }
 
-.header .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header .contacts__item {
   margin-left: 50px;
 }
 
 .header .contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -333,7 +370,6 @@ img {
 .button {
   display: inline-block;
   padding: 10px 32px;
-  min-width: 200px;
   border-radius: 4px;
   border: none;
   background-color: #2196f3;
@@ -355,33 +391,6 @@ img {
   background-color: #188ce8;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.button-menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.button-menu__icon {
-  width: 40px;
-  height: 40px;
-}
-
-.button-menu .icon-cross {
-  display: none;
-}
-
-.button-menu--is-open .icon-cross {
-  display: block;
-}
-
-.button-menu--is-open .icon-burger {
-  display: none;
 }
 
 .backdrop {
@@ -728,26 +737,40 @@ img {
 }
 
 .header {
-  color: #000;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+  color: #000;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1140px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer {
@@ -760,10 +783,12 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1140px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__title {
@@ -802,14 +827,21 @@ img {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
   text-align: center;
 }
 
-.hero__container {
-  padding: 200px 0;
-  width: 696px;
+@media screen and (min-width: 1140px) {
+  .hero {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .hero__container {
+    padding: 200px 0;
+    width: 696px;
+  }
 }
 
 .hero__title {
@@ -824,10 +856,12 @@ img {
   text-transform: uppercase;
 }
 
-.features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1140px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .features__title {
@@ -881,7 +915,7 @@ img {
   padding-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .development {
     display: none;
   }
@@ -922,10 +956,12 @@ img {
   background-color: #f5f4fa;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1140px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .team__item + .team__item {
@@ -1044,12 +1080,14 @@ img {
   overflow: hidden;
 }
 
-.project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 1140px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .project__link {

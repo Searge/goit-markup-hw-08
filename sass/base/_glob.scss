@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
   background: getColor('primary-bg');
   color: getColor('primary-text');
 
@@ -11,18 +9,26 @@ body {
   line-height: 1.8;
   letter-spacing: 0.03em;
 
-  @media (min-width: 800px) {
-    background-color: getColor('secondary-bg');
-  }
 }
 
 // Wrapper
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include respond-to-min('mobile') {
+    width: getWidth('mobile');
+  }
+
+  @include respond-to-min('tablet') {
+    width: getWidth('tablet');
+  }
+
+  @include respond-to-min('desktop') {
+    max-width: 1200px;
+  }
 }
 
 @import './reset';

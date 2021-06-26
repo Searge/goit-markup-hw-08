@@ -42,59 +42,59 @@
     <header class="header">
       <div class="header__container container">
         <!-- Logo -->
-        <nav class="navigation">
-          <a class="logo" href="./"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
+        <a class="logo" href="./">
+          <span class="logo--accent">Web</span>Studio
+        </a>
 
-          <button class="button-menu" type="button" data-menu-open>
-            <svg
-              class="button-menu__icon"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="icon-cross"
-                href="./images/icons/sprites.svg#cross-24"
-              ></use>
-              <use
-                class="icon-burger"
-                href="./images/icons/sprites.svg#burger"
-              ></use>
-            </svg>
-          </button>
+        <div class="menu" data-menu>
           <!-- Menu -->
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link menu__link--current" href="./">Студия</a>
+          <nav class="navigation">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--current" href="./">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contacts -->
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto://info@example.com">
+                <svg class="contacts__icon">
+                  <use href="./images/icons/sprites.svg#envelope"></use>
+                </svg>
+                info@example.com</a
+              >
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./">Контакты</a>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel://+380991111111">
+                <svg class="contacts__icon">
+                  <use href="./images/icons/sprites.svg#smartphone"></use>
+                </svg>
+                +38 099 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
+        </div>
 
-        <!-- Contacts -->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto://info@example.com">
-              <svg class="contacts__icon">
-                <use href="./images/icons/sprites.svg#envelope"></use>
-              </svg>
-              info@example.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel://+380991111111">
-              <svg class="contacts__icon">
-                <use href="./images/icons/sprites.svg#smartphone"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+        <button class="menu__button" data-menu-open type="button">
+          <svg class="menu__icon" aria-label="Переключатель мобильного меню">
+            <use
+              class="icon-cross"
+              href="./images/icons/sprites.svg#cross-24"
+            ></use>
+            <use
+              class="icon-burger"
+              href="./images/icons/sprites.svg#burger"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -579,6 +579,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
   </body>

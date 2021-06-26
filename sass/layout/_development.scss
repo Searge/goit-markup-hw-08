@@ -1,5 +1,5 @@
 .development {
-  @media screen and (max-width: $tablet) {
+  @include respond-to-min('tablet') {
     display: none;
   }
 

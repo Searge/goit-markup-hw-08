@@ -4,13 +4,18 @@
     url('../images/hero_bg.jpg');
   background-position: 50% 50%;
   background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
   text-align: center;
 
+  @include respond-to-min('desktop') {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
   &__container {
-    padding: 200px 0;
-    width: 696px;
+    @include respond-to-min('desktop') {
+      padding: 200px 0;
+      width: 696px;
+    }
   }
 
   &__title {

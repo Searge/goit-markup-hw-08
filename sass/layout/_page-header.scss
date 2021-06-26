@@ -1,14 +1,27 @@
 .header {
-  color: getColor('ternary-text');
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   border-bottom: 1px solid getColor('border');
+  color: getColor('ternary-text');
+
+  @include respond-to-min('tablet') {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include respond-to-min('desktop') {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }
 
 .navigation {
-  display: flex;
+  @include respond-to-min('desktop') {
+    display: flex;
+  }
 }
