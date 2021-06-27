@@ -16,26 +16,37 @@
     color: getColor('accent');
   }
 
-  .header & {
-    // display: flex;
+  .menu & {
+    
+    @include respond-to-min('tablet') {
+      display: flex;
+    }
   }
 
-  .header &__item {
-    margin-left: 50px;
+  .menu &__item {
+    @include respond-to-min('tablet') {
+      margin-left: 50px;
+    }
   }
 
-  .header &__link {
-    // display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  .menu &__link {
+    @include respond-to-min('tablet') {
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
+    display: none;
+
+    @include respond-to-min('tablet') {
+      fill: currentColor;
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .address &__item {

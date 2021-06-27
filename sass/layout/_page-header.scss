@@ -1,7 +1,8 @@
 .header {
-  position: relative;
+  // position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-right: 15px;
 
   border-bottom: 1px solid getColor('border');
   color: getColor('ternary-text');
@@ -17,11 +18,5 @@
       align-items: center;
       justify-content: space-between;
     }
-  }
-}
-
-.navigation {
-  @include respond-to-min('desktop') {
-    display: flex;
   }
 }
