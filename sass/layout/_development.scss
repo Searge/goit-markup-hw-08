@@ -1,5 +1,5 @@
 .development {
-  @include respond-to-min('tablet') {
+  @include respond-to-max('tablet') {
     display: none;
   }
 
