@@ -1136,7 +1136,13 @@ img {
 }
 
 .team__item + .team__item {
-  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1140px) {
+  .team__item + .team__item {
+    margin-left: 30px;
+  }
 }
 
 .team__item {
@@ -1148,6 +1154,11 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.team__img {
+  width: 450px;
+  height: 460px;
 }
 
 .team__title {
