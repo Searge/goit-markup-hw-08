@@ -17,7 +17,6 @@
   }
 
   .menu & {
-    
     @include respond-to-min('tablet') {
       display: flex;
     }
