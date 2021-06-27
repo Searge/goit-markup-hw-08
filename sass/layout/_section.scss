@@ -1,6 +1,9 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+  @include respond-to-min('desktop') {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     margin-top: 0;

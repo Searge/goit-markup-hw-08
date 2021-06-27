@@ -8,25 +8,21 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-
 }
 
 // Wrapper
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @include respond-to-min('mobile') {
-    width: getWidth('mobile');
-  }
 
   @include respond-to-min('tablet') {
     width: getWidth('tablet');
   }
 
   @include respond-to-min('desktop') {
+    margin-left: auto;
+    margin-right: auto;
+
     max-width: 1200px;
   }
 }
