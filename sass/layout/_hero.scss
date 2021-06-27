@@ -12,6 +12,8 @@
   }
 
   &__container {
+    padding: 118px 60px;
+
     @include respond-to-min('desktop') {
       padding: 200px 0;
       width: 696px;
@@ -22,11 +24,18 @@
     margin-top: 0;
     margin-bottom: 30px;
     padding: 0;
+
     color: getColorInverted('primary-text');
+
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
+    font-size: 26px;
+    line-height: 1, 61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include respond-to-min('tablet') {
+      font-size: 44px;
+      line-height: 1.3;
+    }
   }
 }
