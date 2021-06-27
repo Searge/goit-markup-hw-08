@@ -3,21 +3,45 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 336px;
+
+    @include respond-to-min('tablet') {
+      justify-content: center;
+    }
+
     margin-top: 0px;
     margin-bottom: 0;
   }
 
+  // &__item {
+  //   margin-bottom: 30px;
+  // }
+  // &__items:nth-child(n + 4) {
+  //   margin-bottom: 0;
+  // }
+
   &__items:not(:last-child) {
-    margin-right: 30px;
+    // margin-bottom: 30px;
+    @include respond-to-min('desktop') {
+      margin-right: 30px;
+    }
   }
 
   // Partners links & icons
   &__link {
     display: flex;
     align-items: center;
-    width: 170px;
-    height: 90px;
+    width: 210px;
+    height: 92px;
+    @include respond-to-min('desktop') {
+      width: 170px;
+      height: 90px;
+    }
+
     border-radius: 4px;
     border: 1px solid getColor('ternary-buttons');
     color: getColor('ternary-buttons');
