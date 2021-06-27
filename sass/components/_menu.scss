@@ -1,6 +1,10 @@
 .menu {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
   .navigation,
-  .contacts {
+  .contacts,
+  .menu-social {
     display: none;
 
     @include respond-to-min('tablet') {
@@ -16,6 +20,11 @@
   &.is-open .contacts {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  &.is-open .contacts__item:last-child {
+    margin-bottom: 32px;
   }
 
   &.is-open .contacts__item:last-child .contacts__link {
@@ -29,6 +38,24 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
+  }
+
+  // Social
+  &.is-open .menu-social {
+    display: flex;
+  }
+
+  &.is-open .menu-social__item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .menu-social__link {
+    color: getColor('accent');
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
   }
 
   &.is-open {
@@ -64,7 +91,6 @@
 
   // Site nav
   &__link {
-    font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     color: getColor('secondary-text');
@@ -79,7 +105,6 @@
       padding-bottom: 32px;
 
       line-height: 1.14;
-      letter-spacing: 0.02em;
     }
   }
 
