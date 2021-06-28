@@ -3,26 +3,32 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    height: 336px;
 
     @include respond-to-min('tablet') {
       justify-content: center;
     }
 
+    @include respond-to-min('desktop') {
+      flex-wrap: nowrap;
+    }
+
     margin-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: -30px;
+    margin-left: -30px;
   }
 
-  // &__item {
-  //   margin-bottom: 30px;
-  // }
-  // &__items:nth-child(n + 4) {
-  //   margin-bottom: 0;
-  // }
+  &__items {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    height: calc(100% / 3 - 30px);
+    @include respond-to-min('desktop') {
+      flex-basis: 170px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
 
   &__items:not(:last-child) {
     // margin-bottom: 30px;
@@ -35,13 +41,10 @@
   &__link {
     display: flex;
     align-items: center;
-    width: 210px;
-    height: 92px;
+    padding: 16px 0;
     @include respond-to-min('desktop') {
       width: 170px;
-      height: 90px;
     }
-
     border-radius: 4px;
     border: 1px solid getColor('ternary-buttons');
     color: getColor('ternary-buttons');
@@ -57,6 +60,10 @@
 
   &__icon {
     fill: currentColor;
-    height: 50px;
+    // width: 106px;
+    height: 60px;
+    @include respond-to-min('desktop') {
+      height: 50px;
+    }
   }
 }
