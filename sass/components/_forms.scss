@@ -104,6 +104,11 @@
     background-size: contain;
   }
 
+  &__text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
   &__link {
     color: getColor('accent');
   }
