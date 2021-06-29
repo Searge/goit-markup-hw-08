@@ -26,9 +26,15 @@
     text-align: center;
   }
 
+  &__thumb {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
   &__img {
     width: 450px;
-    height: 460px;
   }
 
   &__title {

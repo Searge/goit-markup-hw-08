@@ -1182,9 +1182,15 @@ video {
   text-align: center;
 }
 
+.team__thumb {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
 .team__img {
   width: 450px;
-  height: 460px;
 }
 
 .team__title {

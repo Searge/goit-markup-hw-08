@@ -286,7 +286,7 @@
                 class="development__image"
                 src="./images/portfolio/coding.jpg"
                 alt="Кодинг на планшете"
-                width="370"
+                loading="lazy"
               />
               <div class="development__desc">
                 <p class="development__text">Десктопные приложения</p>
@@ -297,7 +297,7 @@
                 class="development__image"
                 src="./images/portfolio/phone.jpg"
                 alt="Разработка миобильного приложения"
-                width="370"
+                loading="lazy"
               />
               <div class="development__desc">
                 <p class="development__text">Мобильные приложения</p>
@@ -308,7 +308,7 @@
                 class="development__image"
                 src="./images/portfolio/palette.jpg"
                 alt="Цветовая схема"
-                width="370"
+                loading="lazy"
               />
               <div class="development__desc">
                 <p class="development__text">Дизайнерские решения</p>
@@ -322,9 +322,60 @@
       <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
+
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__img" src="./images/team/igor.jpg" alt="Игорь" />
+              <picture class="team__thumb">
+                <source
+                  srcset="./images/team/igor-450.webp"
+                  media="screen and (max-width:576px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-450.jpg    1x,
+                    ./images/team/igor-450@2x.jpg 2x,
+                    ./images/team/igor-450@3x.jpg 3x
+                  "
+                  media="screen and (max-width:576px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/igor-354.webp"
+                  media="screen and (max-width:1024px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-354.jpg    1x,
+                    ./images/team/igor-354@2x.jpg 2x,
+                    ./images/team/igor-354@3x.jpg 3x
+                  "
+                  media="screen and (max-width:1024px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/igor-270.webp"
+                  media="screen and (min-width:1024px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-270.jpg    1x,
+                    ./images/team/igor-270@2x.jpg 2x,
+                    ./images/team/igor-270@3x.jpg 3x
+                  "
+                  media="screen and (min-width:1024px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/igor-270.jpg"
+                  alt="Игорь"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="social">
@@ -358,8 +409,16 @@
                 </li>
               </ul>
             </li>
+
             <li class="team__item">
-              <img class="team__img" src="./images/team/olga.jpg" alt="Ольга" />
+              <picture class="team__thumb">
+                <img
+                  class="team__img"
+                  src="./images/team/olga-270.jpg"
+                  alt="Ольга"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__position">Frontend developmenteloper</p>
               <ul class="social">
@@ -394,11 +453,14 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/nikola.jpg"
-                alt="Николай"
-              />
+              <picture class="team__thumb">
+                <img
+                  class="team__img"
+                  src="./images/team/nikola-270.jpg"
+                  alt="Николай"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="social">
@@ -433,11 +495,14 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/mike.jpg"
-                alt="Михаил"
-              />
+              <picture class="team__thumb">
+                <img
+                  class="team__img"
+                  src="./images/team/mike-270.jpg"
+                  alt="Михаил"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="social">
