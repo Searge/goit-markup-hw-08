@@ -1,7 +1,7 @@
 .hero {
   background-color: getColor('ternary-bg');
   background-image: linear-gradient(to bottom, $hero-gradient, $hero-gradient),
-    url('../images/hero_bg.webp'), url('../images/hero_bg.jpg');
+    url('../images/hero_bg.jpg');
   /* 2x screens, retina, 640x480 image */
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
