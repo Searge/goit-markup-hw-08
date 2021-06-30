@@ -7,13 +7,14 @@
   border-bottom: 1px solid getColor('border');
   color: getColor('ternary-text');
 
-  @include respond-to-min('tablet') {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  // Desktop styles
+  @include respond-from-min('mobile') {
+    & {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
-  &__container {
-    @include respond-to-min('desktop') {
+    &__container {
       display: flex;
       align-items: center;
       justify-content: space-between;

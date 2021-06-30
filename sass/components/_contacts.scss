@@ -16,36 +16,8 @@
     color: getColor('accent');
   }
 
-  .menu & {
-    @include respond-to-min('tablet') {
-      display: flex;
-    }
-  }
-
-  .menu &__item {
-    @include respond-to-min('tablet') {
-      margin-left: 50px;
-    }
-  }
-
-  .menu &__link {
-    @include respond-to-min('tablet') {
-      display: flex;
-      align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-  }
-
   &__icon {
     display: none;
-
-    @include respond-to-min('tablet') {
-      fill: currentColor;
-      margin-right: 10px;
-      width: 16px;
-      height: 16px;
-    }
   }
 
   .address &__item {
@@ -55,5 +27,32 @@
   .address &__link {
     font-weight: 400;
     color: $footer-links-color;
+  }
+
+  // Desktop
+  @include respond-from-min('tablet') {
+    .menu & {
+      display: flex;
+    }
+
+    .menu &__item {
+      margin-left: 50px;
+    }
+
+    .menu &__link {
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__icon {
+      display: block;
+
+      fill: currentColor;
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+    }
   }
 }

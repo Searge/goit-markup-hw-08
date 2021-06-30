@@ -8,8 +8,8 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  &__container {
-    @include respond-to-min('desktop') {
+  @include respond-from-min('desktop') {
+    &__container {
       display: flex;
     }
   }
