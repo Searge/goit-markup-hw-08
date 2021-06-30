@@ -282,34 +282,82 @@
 
           <ul class="development__list">
             <li class="development__item">
-              <img
-                class="development__image"
-                src="./images/portfolio/coding.jpg"
-                alt="Кодинг на планшете"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/development/codding-370.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/development/coding.jpg       1x,
+                    ./images/development/coding-370@2.jpg 2x,
+                    ./images/development/coding-370@3.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="development__image"
+                  src="./images/development/coding.jpg"
+                  alt="Кодинг на планшете"
+                  loading="lazy"
+                />
+              </picture>
               <div class="development__desc">
                 <p class="development__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="development__item">
-              <img
-                class="development__image"
-                src="./images/portfolio/phone.jpg"
-                alt="Разработка миобильного приложения"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/development/phone-370.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/development/phone.jpg       1x,
+                    ./images/development/phone-370@2.jpg 2x,
+                    ./images/development/phone-370@3.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="development__image"
+                  src="./images/development/phone.jpg"
+                  alt="Разработка миобильного приложения"
+                  loading="lazy"
+                />
+              </picture>
               <div class="development__desc">
                 <p class="development__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="development__item">
-              <img
-                class="development__image"
-                src="./images/portfolio/palette.jpg"
-                alt="Цветовая схема"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/development/palette-370.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/development/palette.jpg       1x,
+                    ./images/development/palette-370@2.jpg 2x,
+                    ./images/development/palette-370@3.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="development__image"
+                  src="./images/development/palette.jpg"
+                  alt="Цветовая схема"
+                  loading="lazy"
+                />
+              </picture>
               <div class="development__desc">
                 <p class="development__text">Дизайнерские решения</p>
               </div>
