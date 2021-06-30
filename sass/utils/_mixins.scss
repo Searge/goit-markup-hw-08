@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-@mixin respond-to-min($breakpoint) {
+@mixin respond-from-min($breakpoint) {
   @media screen and (min-width: getWidth($breakpoint)) {
     @content;
   }
