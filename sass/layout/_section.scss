@@ -1,8 +1,12 @@
 .section {
   padding: 60px 0;
-  @include respond-to-min('desktop') {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+  // Desktop styles
+  @include respond-from-min('tablet') {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   &__title {

@@ -1,16 +1,18 @@
 .team {
   background-color: getColor('secondary-bg');
 
-  &__list {
-    @include respond-to-min('desktop') {
-      display: flex;
-    }
-  }
-
   &__item + &__item {
     margin-top: 30px;
+  }
 
-    @include respond-to-min('desktop') {
+  // Desktop styles
+  @include respond-from-min('tablet') {
+    &__list {
+      display: flex;
+    }
+
+    &__item + &__item {
+      // margin-top: 30px;
       margin-left: 30px;
     }
   }

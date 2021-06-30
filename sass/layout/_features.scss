@@ -1,8 +1,4 @@
 .features {
-  @include respond-to-min('desktop') {
-    display: flex;
-  }
-
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -12,22 +8,10 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    @include respond-to-min('mobile') {
-      text-align: center;
-    }
-  }
-
-  &__item {
-    @include respond-to-min('desktop') {
-      width: 270px;
-    }
   }
 
   &__item + &__item {
     margin-top: 30px;
-    @include respond-to-min('desktop') {
-      margin-left: 30px;
-    }
   }
 
   &__description {
@@ -40,10 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include respond-to-min('desktop') {
-      width: 270px;
-      height: 120px;
-    }
+
     background-color: getColor('secondary-bg');
     border-radius: 4px;
     margin-bottom: 30px;
@@ -53,5 +34,31 @@
   &__icon {
     width: 70px;
     height: 70px;
+  }
+
+  // Desktop style
+  @include respond-from-min('tablet') {
+    & {
+      display: flex;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__item {
+      // TODO: Check the width
+      width: 270px;
+    }
+
+    &__item + &__item {
+      margin-left: 30px;
+    }
+
+    &__icon-wrapper {
+      // TODO: Check the width
+      width: 270px;
+      height: 120px;
+    }
   }
 }
