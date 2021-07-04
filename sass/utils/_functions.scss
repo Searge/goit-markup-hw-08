@@ -1,3 +1,4 @@
+// Colours
 @function getColor($key: 'primary-text') {
   @return map-get($colors-main, $key);
 }
@@ -18,6 +19,7 @@
   @return rgba($color, $opacity);
 }
 
+// Get width according to breakpoint
 @function getWidth($breakpoint) {
   @if map-key-exists($breakpoints, $breakpoint) {
     @return map-get($breakpoints, $breakpoint);
@@ -27,12 +29,17 @@
   }
 }
 
-@function flexElementWidth(
-  $marginValue: 0,
-  $marginsCount: 2,
-  $elementsInString: 0
-) {
-  @return calc(
-    (100% - #{$marginValue} * #{$marginsCount}) / #{$elementsInString}
-  );
+// Get width of parent container
+@function flexContainerWidth($marginValue: 0, $marginsCount: 2, $elementsInRow: 0) {
+  @return calc((100% - #{$marginValue} * #{$marginsCount}) / #{$elementsInRow});
+}
+
+// Get width of child element
+@function flexElementWidth($marginValue: 0, $elementsInRow: 2) {
+  @return calc(100% / #{$elementsInRow} - #{$marginValue});
+}
+
+// return negative value in required units
+@function negativeMargin($gap) {
+  @return calc(-1 * #{$gap});
 }

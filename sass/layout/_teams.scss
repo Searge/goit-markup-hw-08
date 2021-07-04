@@ -1,31 +1,62 @@
 .team {
   background-color: getColor('secondary-bg');
 
-  &__item + &__item {
-    margin-top: 30px;
-  }
+  &__list {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 
-  // Desktop styles
-  @include respond-from-min('tablet') {
-    &__list {
+    max-width: getWidth('mobile');
+
+    @include respond-from-min('tablet') {
       display: flex;
+      flex-wrap: wrap;
+
+      max-width: getWidth('tablet');
+
+      margin-left: negativeMargin($team-item-gap);
+      margin-top: negativeMargin($team-item-gap);
+      margin-right: 0;
     }
 
-    &__item + &__item {
-      // margin-top: 30px;
-      margin-left: 30px;
+    @include respond-from-min('desktop') {
+      max-width: getWidth('desktop');
+
+      margin-top: 0;
     }
   }
 
   &__item {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
     background-color: getColor('primary-bg');
     box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14,
       0px 2px 1px $backdrop-bg;
     border-radius: 0px 0px 4px 4px;
+
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+
+    @include respond-to-max('tablet') {
+      max-width: 450px;
+
+      &:not(:first-child) {
+        margin-top: $team-item-gap;
+      }
+    }
+
+    @include respond-from-min('tablet') {
+      flex-basis: flexElementWidth($team-item-gap, 2);
+      margin-left: $team-item-gap;
+      margin-top: $team-item-gap;
+    }
+
+    @include respond-from-min('desktop') {
+      flex-basis: flexElementWidth($team-item-gap, 4);
+      margin-left: $team-item-gap;
+      margin-top: 0;
+    }
   }
 
   &__thumb {

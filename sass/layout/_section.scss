@@ -2,11 +2,9 @@
   padding: 60px 0;
 
   // Desktop styles
-  @include respond-from-min('tablet') {
-    & {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  @include respond-from-min('desktop') {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   &__title {
@@ -18,5 +16,22 @@
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
+  }
+}
+
+// Wrapper
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include respond-from-min('mobile') {
+    max-width: getWidth('tablet');
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include respond-from-min('desktop') {
+    max-width: getWidth('desktop');
   }
 }
