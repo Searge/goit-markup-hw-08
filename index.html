@@ -284,22 +284,33 @@
             <li class="development__item">
               <picture>
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="./images/development/codding-370.webp 1x"
                   type="image/webp"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/codding-370.webp    370w,
+                    ./images/development/coding-370@2x.webp  740w,
+                    ./images/development/coding-370@3x.webp 1110w
+                  "
                 />
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/development/coding.jpg       1x,
-                    ./images/development/coding-370@2.jpg 2x,
-                    ./images/development/coding-370@3.jpg 3x
-                  "
                   type="image/jpeg"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/coding.jpg         370w,
+                    ./images/development/coding-370@2x.jpg  740w,
+                    ./images/development/coding-370@3x.jpg 1110w
+                  "
                 />
                 <img
                   class="development__image"
                   src="./images/development/coding.jpg"
+                  srcset="
+                    ./images/development/coding.jpg         370w,
+                    ./images/development/coding-370@2x.jpg  740w,
+                    ./images/development/coding-370@3x.jpg 1110w
+                  "
                   alt="Кодинг на планшете"
                   loading="lazy"
                 />
@@ -311,22 +322,34 @@
             <li class="development__item">
               <picture>
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="./images/development/phone-370.webp 1x"
                   type="image/webp"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/phone-370.webp     370w,
+                    ./images/development/phone-370@2x.webp  740w,
+                    ./images/development/phone-370@3x.webp 1110w
+                  "
                 />
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/development/phone.jpg       1x,
-                    ./images/development/phone-370@2.jpg 2x,
-                    ./images/development/phone-370@3.jpg 3x
-                  "
                   type="image/jpeg"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/phone.jpg         370w,
+                    ./images/development/phone-370@2x.jpg  740w,
+                    ./images/development/phone-370@3x.jpg 1110w
+                  "
                 />
                 <img
                   class="development__image"
                   src="./images/development/phone.jpg"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/phone.jpg         370w,
+                    ./images/development/phone-370@2x.jpg  740w,
+                    ./images/development/phone-370@3x.jpg 1110w
+                  "
                   alt="Разработка миобильного приложения"
                   loading="lazy"
                 />
@@ -338,22 +361,34 @@
             <li class="development__item">
               <picture>
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="./images/development/palette-370.webp 1x"
                   type="image/webp"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/palette-370.webp     370w,
+                    ./images/development/palette-370@2x.webp  740w,
+                    ./images/development/palette-370@3x.webp 1110w
+                  "
                 />
                 <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ./images/development/palette.jpg       1x,
-                    ./images/development/palette-370@2.jpg 2x,
-                    ./images/development/palette-370@3.jpg 3x
-                  "
                   type="image/jpeg"
+                  media="screen and (min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/palette.jpg         370w,
+                    ./images/development/palette-370@2x.jpg  740w,
+                    ./images/development/palette-370@3x.jpg 1110w
+                  "
                 />
                 <img
                   class="development__image"
                   src="./images/development/palette.jpg"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  srcset="
+                    ./images/development/palette.jpg         370w,
+                    ./images/development/palette-370@2x.jpg  740w,
+                    ./images/development/palette-370@3x.jpg 1110w
+                  "
                   alt="Цветовая схема"
                   loading="lazy"
                 />
@@ -374,52 +409,82 @@
           <ul class="team__list">
             <li class="team__item">
               <picture class="team__thumb">
+                <!-- Mobile -->
                 <source
-                  srcset="./images/team/igor-450.webp"
-                  media="screen and (max-width:576px)"
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/igor-450.jpg    1x,
-                    ./images/team/igor-450@2x.jpg 2x,
-                    ./images/team/igor-450@3x.jpg 3x
+                    ./images/team/igor-450.webp     450w,
+                    ./images/team/igor-450@2x.webp  900w,
+                    ./images/team/igor-450@3x.webp 1350w
                   "
-                  media="screen and (max-width:576px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
                 />
                 <source
-                  srcset="./images/team/igor-354.webp"
-                  media="screen and (max-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/igor-450.jpg     450w,
+                    ./images/team/igor-450@2x.jpg  900w,
+                    ./images/team/igor-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/igor-354.jpg    1x,
-                    ./images/team/igor-354@2x.jpg 2x,
-                    ./images/team/igor-354@3x.jpg 3x
+                    ./images/team/igor-354.webp     354w,
+                    ./images/team/igor-354@2x.webp 1350w,
+                    ./images/team/igor-354@3x.webp 1062w
                   "
-                  media="screen and (max-width:1024px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <source
-                  srcset="./images/team/igor-270.webp"
-                  media="screen and (min-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/igor-354.jpg     354w,
+                    ./images/team/igor-354@2x.jpg 1350w,
+                    ./images/team/igor-354@3x.jpg 1062w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
                   type="image/webp"
+                  srcset="
+                    ./images/team/igor-270.webp    270w,
+                    ./images/team/igor-270@2x.webp 540w,
+                    ./images/team/igor-270@3x.webp 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <source
-                  srcset="
-                    ./images/team/igor-270.jpg    1x,
-                    ./images/team/igor-270@2x.jpg 2x,
-                    ./images/team/igor-270@3x.jpg 3x
-                  "
-                  media="screen and (min-width:1024px)"
                   type="image/jpeg"
+                  srcset="
+                    ./images/team/igor-270.jpg    270w,
+                    ./images/team/igor-270@2x.jpg 540w,
+                    ./images/team/igor-270@3x.jpg 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <img
                   class="team__img"
                   src="./images/team/igor-270.jpg"
-                  alt="Игорь"
+                  alt="Ольга"
+                  srcset="
+                    ./images/team/igor-270.jpg 270w,
+                    ./images/team/igor-354.jpg 354w,
+                    ./images/team/igor-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
                   loading="lazy"
                 />
               </picture>
@@ -460,52 +525,82 @@
 
             <li class="team__item">
               <picture class="team__thumb">
+                <!-- Mobile -->
                 <source
-                  srcset="./images/team/olga-450.webp"
-                  media="screen and (max-width:576px)"
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/olga-450.jpg    1x,
-                    ./images/team/olga-450@2x.jpg 2x,
-                    ./images/team/olga-450@3x.jpg 3x
+                    ./images/team/olga-450.webp     450w,
+                    ./images/team/olga-450@2x.webp  900w,
+                    ./images/team/olga-450@3x.webp 1350w
                   "
-                  media="screen and (max-width:576px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
                 />
                 <source
-                  srcset="./images/team/olga-354.webp"
-                  media="screen and (max-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/olga-450.jpg     450w,
+                    ./images/team/olga-450@2x.jpg  900w,
+                    ./images/team/olga-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/olga-354.jpg    1x,
-                    ./images/team/olga-354@2x.jpg 2x,
-                    ./images/team/olga-354@3x.jpg 3x
+                    ./images/team/olga-354.webp     354w,
+                    ./images/team/olga-354@2x.webp 1350w,
+                    ./images/team/olga-354@3x.webp 1062w
                   "
-                  media="screen and (max-width:1024px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <source
-                  srcset="./images/team/olga-270.webp"
-                  media="screen and (min-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/olga-354.jpg     354w,
+                    ./images/team/olga-354@2x.jpg 1350w,
+                    ./images/team/olga-354@3x.jpg 1062w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
                   type="image/webp"
+                  srcset="
+                    ./images/team/olga-270.webp    270w,
+                    ./images/team/olga-270@2x.webp 540w,
+                    ./images/team/olga-270@3x.webp 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <source
-                  srcset="
-                    ./images/team/olga-270.jpg    1x,
-                    ./images/team/olga-270@2x.jpg 2x,
-                    ./images/team/olga-270@3x.jpg 3x
-                  "
-                  media="screen and (min-width:1024px)"
                   type="image/jpeg"
+                  srcset="
+                    ./images/team/olga-270.jpg    270w,
+                    ./images/team/olga-270@2x.jpg 540w,
+                    ./images/team/olga-270@3x.jpg 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <img
                   class="team__img"
                   src="./images/team/olga-270.jpg"
                   alt="Ольга"
+                  srcset="
+                    ./images/team/olga-270.jpg 270w,
+                    ./images/team/olga-354.jpg 354w,
+                    ./images/team/olga-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
                   loading="lazy"
                 />
               </picture>
@@ -544,52 +639,82 @@
             </li>
             <li class="team__item">
               <picture class="team__thumb">
+                <!-- Mobile -->
                 <source
-                  srcset="./images/team/nikola-450.webp"
-                  media="screen and (max-width:576px)"
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/nikola-450.jpg    1x,
-                    ./images/team/nikola-450@2x.jpg 2x,
-                    ./images/team/nikola-450@3x.jpg 3x
+                    ./images/team/nikola-450.webp     450w,
+                    ./images/team/nikola-450@2x.webp  900w,
+                    ./images/team/nikola-450@3x.webp 1350w
                   "
-                  media="screen and (max-width:576px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
                 />
                 <source
-                  srcset="./images/team/nikola-354.webp"
-                  media="screen and (max-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/nikola-450.jpg     450w,
+                    ./images/team/nikola-450@2x.jpg  900w,
+                    ./images/team/nikola-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/nikola-354.jpg    1x,
-                    ./images/team/nikola-354@2x.jpg 2x,
-                    ./images/team/nikola-354@3x.jpg 3x
+                    ./images/team/nikola-354.webp     354w,
+                    ./images/team/nikola-354@2x.webp 1350w,
+                    ./images/team/nikola-354@3x.webp 1062w
                   "
-                  media="screen and (max-width:1024px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <source
-                  srcset="./images/team/nikola-270.webp"
-                  media="screen and (min-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/nikola-354.jpg     354w,
+                    ./images/team/nikola-354@2x.jpg 1350w,
+                    ./images/team/nikola-354@3x.jpg 1062w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
                   type="image/webp"
+                  srcset="
+                    ./images/team/nikola-270.webp    270w,
+                    ./images/team/nikola-270@2x.webp 540w,
+                    ./images/team/nikola-270@3x.webp 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <source
-                  srcset="
-                    ./images/team/nikola-270.jpg    1x,
-                    ./images/team/nikola-270@2x.jpg 2x,
-                    ./images/team/nikola-270@3x.jpg 3x
-                  "
-                  media="screen and (min-width:1024px)"
                   type="image/jpeg"
+                  srcset="
+                    ./images/team/nikola-270.jpg    270w,
+                    ./images/team/nikola-270@2x.jpg 540w,
+                    ./images/team/nikola-270@3x.jpg 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <img
                   class="team__img"
                   src="./images/team/nikola-270.jpg"
-                  alt="Николай"
+                  alt="Ольга"
+                  srcset="
+                    ./images/team/nikola-270.jpg 270w,
+                    ./images/team/nikola-354.jpg 354w,
+                    ./images/team/nikola-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
                   loading="lazy"
                 />
               </picture>
@@ -628,52 +753,82 @@
             </li>
             <li class="team__item">
               <picture class="team__thumb">
+                <!-- Mobile -->
                 <source
-                  srcset="./images/team/mike-450.webp"
-                  media="screen and (max-width:576px)"
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/mike-450.jpg    1x,
-                    ./images/team/mike-450@2x.jpg 2x,
-                    ./images/team/mike-450@3x.jpg 3x
+                    ./images/team/mike-450.webp     450w,
+                    ./images/team/mike-450@2x.webp  900w,
+                    ./images/team/mike-450@3x.webp 1350w
                   "
-                  media="screen and (max-width:576px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
                 />
                 <source
-                  srcset="./images/team/mike-354.webp"
-                  media="screen and (max-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/mike-450.jpg     450w,
+                    ./images/team/mike-450@2x.jpg  900w,
+                    ./images/team/mike-450@3x.jpg 1350w
+                  "
+                  media="screen and (max-width:767px)"
+                  sizes="100vw"
+                />
+                <!-- Tablet -->
+                <source
                   type="image/webp"
-                />
-                <source
                   srcset="
-                    ./images/team/mike-354.jpg    1x,
-                    ./images/team/mike-354@2x.jpg 2x,
-                    ./images/team/mike-354@3x.jpg 3x
+                    ./images/team/mike-354.webp     354w,
+                    ./images/team/mike-354@2x.webp 1350w,
+                    ./images/team/mike-354@3x.webp 1062w
                   "
-                  media="screen and (max-width:1024px)"
-                  type="image/jpeg"
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <source
-                  srcset="./images/team/mike-270.webp"
-                  media="screen and (min-width:1024px)"
+                  type="image/jpeg"
+                  srcset="
+                    ./images/team/mike-354.jpg     354w,
+                    ./images/team/mike-354@2x.jpg 1350w,
+                    ./images/team/mike-354@3x.jpg 1062w
+                  "
+                  media="screen and (max-width:1199px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <!-- Desktop -->
+                <source
                   type="image/webp"
+                  srcset="
+                    ./images/team/mike-270.webp    270w,
+                    ./images/team/mike-270@2x.webp 540w,
+                    ./images/team/mike-270@3x.webp 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <source
-                  srcset="
-                    ./images/team/mike-270.jpg    1x,
-                    ./images/team/mike-270@2x.jpg 2x,
-                    ./images/team/mike-270@3x.jpg 3x
-                  "
-                  media="screen and (min-width:1024px)"
                   type="image/jpeg"
+                  srcset="
+                    ./images/team/mike-270.jpg    270w,
+                    ./images/team/mike-270@2x.jpg 540w,
+                    ./images/team/mike-270@3x.jpg 810w
+                  "
+                  media="screen and (min-width:1200px)"
+                  sizes="(min-width: 1200px) 25vw, 100vw"
                 />
                 <img
                   class="team__img"
                   src="./images/team/mike-270.jpg"
-                  alt="Михаил"
+                  alt="Ольга"
+                  srcset="
+                    ./images/team/mike-270.jpg 270w,
+                    ./images/team/mike-354.jpg 354w,
+                    ./images/team/mike-450.jpg 450w
+                  "
+                  sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  "
                   loading="lazy"
                 />
               </picture>
