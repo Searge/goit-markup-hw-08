@@ -1,9 +1,18 @@
 .join {
-  width: 206px;
-  margin-right: 93px;
+  margin-bottom: $gap_2x;
+
+  @include respond-from-min('desktop') {
+    width: 206px;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 
   &__social {
     display: flex;
+
+    @include respond-to-max('tablet') {
+      justify-content: center;
+    }
   }
 
   &__item:not(:last-child) {

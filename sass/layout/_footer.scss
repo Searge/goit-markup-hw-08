@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: $gap_2x;
+  padding-bottom: $gap_2x;
 
   background-color: getColor('ternary-bg');
   color: getColorInverted('primary-text');
@@ -8,9 +8,15 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  @include respond-from-min('desktop') {
-    &__container {
+  &__container {
+    max-width: getWidth('mobileBox');
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    @include respond-from-min('desktop') {
       display: flex;
+      text-align: left;
     }
   }
 
@@ -25,6 +31,11 @@
 }
 
 .address {
-  width: 231px;
-  margin-right: 70px;
+  margin-bottom: $gap_2x;
+
+  @include respond-from-min('desktop') {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
