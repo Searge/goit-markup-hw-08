@@ -1,7 +1,19 @@
 .filter {
-  @include centered-flex();
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-from-min('tablet') {
+    @include centered-flex();
+    flex-wrap: nowrap;
+  }
 
   margin-bottom: 50px;
+
+  @include respond-to-max('tablet') {
+    &__item:nth-child(-n + 3) {
+      margin-bottom: $gap_1x;
+    }
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
