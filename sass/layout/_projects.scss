@@ -4,17 +4,54 @@
 }
 
 .project {
+  @include respond-to-max('tablet') {
+    .container > & {
+      max-width: getWidth('mobileBox');
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   // Desktop styles
   @include respond-from-min('tablet') {
-    & {
-      display: flex;
-      flex-wrap: wrap;
+    .container > & {
+      max-width: getWidth('tabletBox');
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: getWidth('tablet');
+
+    margin-left: negativeMargin($gap_2x);
+    margin-top: negativeMargin($gap_2x);
   }
 
   &__link {
     text-decoration: none;
     color: inherit;
+  }
+
+  &__item {
+    @include respond-to-max('tablet') {
+      &:not(:first-child) {
+        margin-top: $gap_2x;
+      }
+    }
+
+    @include respond-from-min('tablet') {
+      flex-basis: flexElementWidth($gap_2x, 2);
+      margin-left: $gap_2x;
+      margin-top: $gap_2x;
+    }
+
+    @include respond-from-min('desktop') {
+      flex-basis: flexElementWidth($gap_2x, 3);
+      margin-left: $gap_2x;
+      margin-top: $gap_2x;
+    }
   }
 
   &__container {
@@ -24,14 +61,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-  }
-
-  &__item:not(:nth-child(3n)) {
-    margin-right: $gap_2x;
-  }
-
-  &__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: $gap_2x;
   }
 
   // Project text

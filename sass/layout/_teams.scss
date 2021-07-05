@@ -2,11 +2,11 @@
   background-color: getColor('secondary-bg');
 
   &__list {
+    max-width: getWidth('mobileBox');
     margin-left: auto;
     margin-right: auto;
     padding: 0;
 
-    max-width: getWidth('mobileBox');
 
     @include respond-from-min('tablet') {
       display: flex;
