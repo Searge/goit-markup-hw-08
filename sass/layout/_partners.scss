@@ -6,15 +6,23 @@
     flex-wrap: wrap;
 
     margin-top: 0px;
-    margin-bottom: negativeMargin($gap_2x);
+    margin-top: negativeMargin($gap_2x);
     margin-left: negativeMargin($gap_2x);
   }
 
   &__items {
-    margin-bottom: $gap_2x;
+    margin-top: $gap_2x;
     margin-left: $gap_2x;
     flex-basis: flexElementWidth($gap_2x, 2);
     height: flexElementWidth($gap_2x, 3);
+
+    @include respond-from-min('tablet') {
+      flex-basis: flexElementWidth($gap_2x, 3);
+    }
+
+    @include respond-from-min('desktop') {
+      flex-basis: flexElementWidth($gap_2x, 6);
+    }
   }
 
   // Partners links & icons
@@ -40,38 +48,5 @@
     fill: currentColor;
     // width: 106px;
     height: 60px;
-  }
-
-  // Tablet styles
-  @include respond-from-min('mobile') {
-    &__list {
-      justify-content: center;
-    }
-  }
-
-  // Desktop styles
-  @include respond-from-min('tablet') {
-    &__list {
-      flex-wrap: nowrap;
-    }
-
-    &__item {
-      flex-basis: 170px;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-
-    &__items:not(:last-child) {
-      // margin-bottom: 30px;
-      margin-right: $gap_2x;
-    }
-
-    &__link {
-      width: 170px;
-    }
-
-    &__icon {
-      height: 50px;
-    }
   }
 }
