@@ -3,6 +3,41 @@
   margin-right: auto;
   margin-left: auto;
 
+  // Tablet styles
+  @include respond-from-min('tablet') {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: getWidth('tablet');
+
+    margin-top: negativeMargin($gap_2x);
+    margin-left: negativeMargin($gap_2x);
+  }
+  // Desktop styles
+  @include respond-from-min('desktop') {
+    max-width: getWidth('desktop');
+
+    margin-top: 0;
+  }
+
+  &__item {
+    @include respond-to-max('tablet') {
+      &:not(:first-child) {
+        margin-top: $gap_2x;
+      }
+    }
+
+    @include respond-from-min('tablet') {
+      flex-basis: flexElementWidth($gap_2x, 2);
+      margin-left: $gap_2x;
+      margin-top: $gap_2x;
+    }
+
+    @include respond-from-min('desktop') {
+      flex-basis: flexElementWidth($gap_2x, 4);
+    }
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -12,10 +47,6 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  }
-
-  &__item + &__item {
-    margin-top: $gap_2x;
   }
 
   &__description {
@@ -40,29 +71,4 @@
     height: 70px;
   }
 
-  // Desktop style
-  @include respond-from-min('tablet') {
-    & {
-      display: flex;
-    }
-
-    &__title {
-      text-align: center;
-    }
-
-    &__item {
-      // TODO: Check the width
-      width: 270px;
-    }
-
-    &__item + &__item {
-      margin-left: $gap_2x;
-    }
-
-    &__icon-wrapper {
-      // TODO: Check the width
-      width: 270px;
-      height: 120px;
-    }
-  }
 }
