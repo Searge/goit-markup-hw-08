@@ -106,6 +106,10 @@
 
     border: none;
     background-color: transparent;
+
+    @include respond-from-min('tablet') {
+      display: none;
+    }
   }
 
   &__button:hover,

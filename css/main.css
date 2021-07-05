@@ -337,6 +337,12 @@ video {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
 .menu__button:hover, .menu__button:focus {
   fill: #2196f3;
 }
