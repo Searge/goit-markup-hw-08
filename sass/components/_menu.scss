@@ -2,6 +2,23 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
+  &.is-open {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    padding: 48px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: getColor('primary-bg');
+  }
+
   .navigation,
   .contacts,
   .menu-social {
@@ -54,23 +71,6 @@
     text-decoration: none;
   }
 
-  &.is-open {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    padding: 48px 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-color: getColor('primary-bg');
-  }
-
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -94,6 +94,7 @@
   // Menu Button
   &__button {
     position: absolute;
+    z-index: 1;
     top: 10px;
     right: $gap_1x;
 
