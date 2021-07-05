@@ -1153,12 +1153,21 @@ video {
 }
 
 .development {
+  display: none;
   padding-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .development {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1286,9 +1295,14 @@ video {
 
 .partners {
   text-align: center;
-  max-width: 450px;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .partners {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .partners__list {

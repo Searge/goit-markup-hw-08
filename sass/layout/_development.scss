@@ -1,8 +1,8 @@
 .development {
-  @include respond-to-max('tablet') {
-    & {
-      display: none;
-    }
+  display: none;
+
+  @include respond-from-min('desktop') {
+    @include centered-flex(flex)
   }
 
   padding-top: 0;

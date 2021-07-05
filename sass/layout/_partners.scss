@@ -1,8 +1,10 @@
 .partners {
   text-align: center;
-  max-width: getWidth('mobileBox');
-  margin-right: auto;
-  margin-left: auto;
+  @include respond-to-max('tablet') {
+    max-width: getWidth('mobile');
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   &__list {
     display: flex;
