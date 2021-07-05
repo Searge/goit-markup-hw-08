@@ -1,20 +1,23 @@
 .partners {
   text-align: center;
+  max-width: getWidth('mobileBox');
+  margin-right: auto;
+  margin-left: auto;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
 
     margin-top: 0px;
-    margin-bottom: -30px;
-    margin-left: -30px;
+    margin-bottom: negativeMargin($gap_2x);
+    margin-left: negativeMargin($gap_2x);
   }
 
   &__items {
-    margin-bottom: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100% / 2 - 30px);
-    height: calc(100% / 3 - 30px);
+    margin-bottom: $gap_2x;
+    margin-left: $gap_2x;
+    flex-basis: flexElementWidth($gap_2x, 2);
+    height: flexElementWidth($gap_2x, 3);
   }
 
   // Partners links & icons
@@ -63,7 +66,7 @@
 
     &__items:not(:last-child) {
       // margin-bottom: 30px;
-      margin-right: 30px;
+      margin-right: $gap_2x;
     }
 
     &__link {
