@@ -1,5 +1,5 @@
 .section {
-  padding: 60px 0;
+  padding: $gap_2x 0;
 
   // Desktop styles
   @include respond-from-min('desktop') {
@@ -21,8 +21,8 @@
 
 // Wrapper
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: $gap_1x;
+  padding-right: $gap_1x;
 
   @include respond-from-min('mobile') {
     max-width: getWidth('tablet');
