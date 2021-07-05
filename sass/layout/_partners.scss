@@ -1,10 +1,5 @@
 .partners {
   text-align: center;
-  @include respond-to-max('tablet') {
-    max-width: getWidth('mobile');
-    margin-right: auto;
-    margin-left: auto;
-  }
 
   &__list {
     display: flex;

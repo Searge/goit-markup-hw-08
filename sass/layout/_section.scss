@@ -24,7 +24,11 @@
   padding-left: $gap_1x;
   padding-right: $gap_1x;
 
-  @include respond-from-min('mobile') {
+  max-width: getWidth('mobile');
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond-from-min('tablet') {
     max-width: getWidth('tablet');
 
     margin-left: auto;
