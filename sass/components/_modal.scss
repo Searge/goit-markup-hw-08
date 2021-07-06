@@ -5,9 +5,9 @@
 
   width: 100vw;
   height: 100vh;
-  padding-left: $gap_1x;
-  padding-right: $gap_1x;
-  padding-top: 93px;
+  padding-left: $pentadeca-gap_1x;
+  padding-right: $pentadeca-gap_1x;
+  padding-top: $xeno-gap_f;
 
   overflow-y: scroll;
 
@@ -47,15 +47,15 @@
 
   &__content {
     // Responsive height
-    height: calc(100% - $gap_2x);
-    padding: 40px;
+    height: calc(100% - $pentadeca-gap_2x);
+    padding: $deca-gap_4x;
     overflow-y: auto;
   }
 
   &__close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: $octa-gap;
+    right: $octa-gap;
 
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: getColor('secondary-text');
-    margin-bottom: 12px;
+    margin-bottom: $dodeca-gap_1x;
   }
 
   // Desktop styles

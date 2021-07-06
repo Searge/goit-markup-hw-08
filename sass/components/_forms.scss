@@ -5,11 +5,11 @@
   text-align: left;
 
   &__label {
-    margin-bottom: 10px;
+    margin-bottom: $deca-gap_1x;
   }
 
   &__textarea {
-    margin-bottom: 20px;
+    margin-bottom: $deca-gap_2x;
   }
 
   &__title {
@@ -25,8 +25,8 @@
 
   &__input {
     width: 100%;
-    padding: 11px 12px;
-    padding-left: 42px;
+    padding: $xeno-gap_0 $dodeca-gap_1x;
+    padding-left: $xeno-gap_e;
     border: 1px solid $modal-form-border;
     box-sizing: border-box;
     border-radius: 4px;
@@ -35,7 +35,7 @@
   &__input-icon {
     position: absolute;
     top: 50%;
-    left: 12px;
+    left: $dodeca-gap_1x;
     transform: translateY(-50%);
 
     display: inline-block;
@@ -47,7 +47,7 @@
   &__comment {
     width: 100%;
     height: 120px;
-    padding: 12px 16px;
+    padding: $dodeca-gap_1x $hexadeca-gap_1x;
     resize: none;
 
     border: 1px solid $modal-form-border;
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: $gap_2x;
+    margin-bottom: $pentadeca-gap_2x;
     line-height: 1.71;
   }
 

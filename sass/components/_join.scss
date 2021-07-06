@@ -1,12 +1,11 @@
 .join {
-  margin-bottom: $gap_4x;
+  margin-bottom: $pentadeca-gap_4x;
   @include respond-from-min('tablet') {
     margin-bottom: 0;
   }
   @include respond-from-min('desktop') {
     width: 206px;
-    margin-right: 93px;
-
+    margin-right: $xeno-gap_f;
   }
 
   &__social {
@@ -18,7 +17,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: $deca-gap_1x;
   }
 
   &__link {

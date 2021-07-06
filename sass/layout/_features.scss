@@ -10,8 +10,8 @@
 
     max-width: getWidth('tablet');
 
-    margin-top: negativeMargin($gap_2x);
-    margin-left: negativeMargin($gap_2x);
+    margin-top: negativeMargin($pentadeca-gap_2x);
+    margin-left: negativeMargin($pentadeca-gap_2x);
   }
   // Desktop styles
   @include respond-from-min('desktop') {
@@ -23,24 +23,24 @@
   &__item {
     @include respond-to-max('tablet') {
       &:not(:first-child) {
-        margin-top: $gap_2x;
+        margin-top: $pentadeca-gap_2x;
       }
     }
 
     @include respond-from-min('tablet') {
-      flex-basis: flexElementWidth($gap_2x, 2);
-      margin-left: $gap_2x;
-      margin-top: $gap_2x;
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 2);
+      margin-left: $pentadeca-gap_2x;
+      margin-top: $pentadeca-gap_2x;
     }
 
     @include respond-from-min('desktop') {
-      flex-basis: flexElementWidth($gap_2x, 4);
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 4);
     }
   }
 
   &__title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: $deca-gap_1x;
     color: getColor('secondary-text');
     font-size: $main-size;
     line-height: 1.14;
@@ -62,7 +62,7 @@
 
     background-color: getColor('secondary-bg');
     border-radius: 4px;
-    margin-bottom: $gap_2x;
+    margin-bottom: $pentadeca-gap_2x;
     padding: 25px 0;
   }
 

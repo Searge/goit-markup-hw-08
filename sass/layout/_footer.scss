@@ -5,12 +5,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  padding-top: $gap_4x;
-  padding-bottom: $gap_4x;
+  padding-top: $pentadeca-gap_4x;
+  padding-bottom: $pentadeca-gap_4x;
 
   @include respond-from-min('desktop') {
-    padding-top: $gap_2x;
-    padding-bottom: $gap_2x;
+    padding-top: $pentadeca-gap_2x;
+    padding-bottom: $pentadeca-gap_2x;
   }
 
   &__container {
@@ -34,7 +34,7 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: $deca-gap_2x;
     font-weight: 700;
     font-size: $main-size;
     line-height: 1.42;
@@ -44,7 +44,7 @@
 }
 
 .address {
-  margin-bottom: $gap_4x;
+  margin-bottom: $pentadeca-gap_4x;
 
   @include respond-from-min('tablet') {
     margin-bottom: 0;
@@ -52,7 +52,7 @@
 
   @include respond-from-min('desktop') {
     width: 231px;
-    margin-right: 70px;
+    margin-right: $deca-gap_7x;
     margin-bottom: 0;
   }
 }

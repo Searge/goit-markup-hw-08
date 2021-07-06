@@ -21,7 +21,7 @@
   }
 
   .address &__item {
-    margin-top: 8px;
+    margin-top: $octa-gap;
     @include respond-from-min('desktop') {
       margin-top: 9px;
     }
@@ -39,7 +39,7 @@
     }
 
     .menu &__item:first-child {
-      margin-bottom: 10px;
+      margin-bottom: $deca-gap_1x;
     }
 
     .menu &__link {
@@ -51,7 +51,7 @@
       display: block;
 
       fill: currentColor;
-      margin-right: 10px;
+      margin-right: $deca-gap_1x;
       width: 16px;
       height: 16px;
     }
@@ -64,14 +64,14 @@
 
     .menu &__item:first-child {
       margin-bottom: 0;
-      margin-right: 50px;
+      margin-right: $deca-gap_5x;
     }
 
     .menu &__link {
       display: flex;
       align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: $hexadeca-gap_2x;
+      padding-bottom: $hexadeca-gap_2x;
     }
   }
 }

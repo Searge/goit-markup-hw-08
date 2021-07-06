@@ -17,16 +17,16 @@
 
   // Header Logo
   .header__container & {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: $hexadeca-gap_1x;
+    padding-bottom: $hexadeca-gap_1x;
     @include respond-from-min('tablet') {
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-top: $dodeca-gap_2x;
+      padding-bottom: $dodeca-gap_2x;
     }
   }
 
   // Footer Logo
   .address & {
-    margin-bottom: 20px;
+    margin-bottom: $deca-gap_2x;
   }
 }

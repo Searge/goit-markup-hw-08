@@ -13,8 +13,8 @@
 
       max-width: getWidth('tablet');
 
-      margin-left: negativeMargin($gap_2x);
-      margin-top: negativeMargin($gap_2x);
+      margin-left: negativeMargin($pentadeca-gap_2x);
+      margin-top: negativeMargin($pentadeca-gap_2x);
       margin-right: 0;
     }
 
@@ -37,19 +37,19 @@
 
     @include respond-to-max('tablet') {
       &:not(:first-child) {
-        margin-top: $gap_2x;
+        margin-top: $pentadeca-gap_2x;
       }
     }
 
     @include respond-from-min('tablet') {
-      flex-basis: flexElementWidth($gap_2x, 2);
-      margin-left: $gap_2x;
-      margin-top: $gap_2x;
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 2);
+      margin-left: $pentadeca-gap_2x;
+      margin-top: $pentadeca-gap_2x;
     }
 
     @include respond-from-min('desktop') {
-      flex-basis: flexElementWidth($gap_2x, 4);
-      margin-left: $gap_2x;
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 4);
+      margin-left: $pentadeca-gap_2x;
       margin-top: 0;
     }
   }
@@ -66,8 +66,8 @@
   }
 
   &__container {
-    padding-top: $gap_2x;
-    padding-bottom: 24px;
+    padding-top: $pentadeca-gap_2x;
+    padding-bottom: $dodeca-gap_2x;
   }
 
   &__title {
@@ -77,7 +77,7 @@
   }
 
   &__position {
-    margin-top: 10px;
-    margin-bottom: 16px;
+    margin-top: $deca-gap_1x;
+    margin-bottom: $hexadeca-gap_1x;
   }
 }

@@ -2,7 +2,7 @@
   display: none;
 
   @include respond-from-min('desktop') {
-    @include centered-flex(flex)
+    @include centered-flex(flex);
   }
 
   padding-top: 0;
@@ -16,7 +16,7 @@
   }
 
   &__item + &__item {
-    margin-left: $gap_2x;
+    margin-left: $pentadeca-gap_2x;
   }
 
   // Thumbs

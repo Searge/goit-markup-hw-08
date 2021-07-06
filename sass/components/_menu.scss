@@ -5,7 +5,7 @@
   @include respond-from-min('tablet') {
     display: flex;
     justify-content: space-between;
-    margin-left: 90px;
+    margin-left: $deca-gap_9x;
 
     width: 100vw;
   }
@@ -29,7 +29,7 @@
     bottom: 0;
     right: 0;
 
-    padding: 48px 40px;
+    padding: 48px $deca-gap_4x;
 
     overflow-y: scroll;
 
@@ -48,11 +48,11 @@
   &.is-open .contacts {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 64px;
+    margin-bottom: $hexadeca-gap_4x;
   }
 
   &.is-open .contacts__item:last-child {
-    margin-bottom: 32px;
+    margin-bottom: $hexadeca-gap_2x;
   }
 
   &.is-open .contacts__item:last-child .contacts__link {
@@ -78,8 +78,8 @@
   }
 
   &.is-open .menu-social__item:not(:last-child) {
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: $deca-gap_1x;
+    padding-right: $deca-gap_1x;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
@@ -93,7 +93,7 @@
   // Site Navigation Contacts Block
   &__contacts {
     @include respond-from-min('tablet') {
-      margin: 19px 0;
+      margin: $xeno-gap_b 0;
     }
     @include respond-from-min('desktop') {
       margin: 0;
@@ -108,9 +108,9 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: $hexadeca-gap_2x;
     @include respond-from-min('tablet') {
-      margin-right: 50px;
+      margin-right: $deca-gap_5x;
       margin-bottom: 0;
     }
   }
@@ -128,8 +128,8 @@
     @include respond-from-min('tablet') {
       position: relative;
       display: block;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: $hexadeca-gap_2x;
+      padding-bottom: $hexadeca-gap_2x;
 
       font-size: $main-size;
       line-height: 1.14;
@@ -186,8 +186,8 @@
   &__button.is-open {
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: $gap_1x;
+    top: $deca-gap_1x;
+    right: $pentadeca-gap_1x;
   }
 
   // Menu Button Icons

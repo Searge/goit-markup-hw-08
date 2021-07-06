@@ -30,7 +30,11 @@
 }
 
 // Get width of parent container
-@function flexContainerWidth($marginValue: 0, $marginsCount: 2, $elementsInRow: 0) {
+@function flexContainerWidth(
+  $marginValue: 0,
+  $marginsCount: 2,
+  $elementsInRow: 0
+) {
   @return calc((100% - #{$marginValue} * #{$marginsCount}) / #{$elementsInRow});
 }
 
@@ -40,6 +44,6 @@
 }
 
 // return negative value in required units
-@function negativeMargin($gap) {
-  @return calc(-1 * #{$gap});
+@function negativeMargin($pentadeca-gap) {
+  @return calc(-1 * #{$pentadeca-gap});
 }

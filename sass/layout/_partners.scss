@@ -6,22 +6,22 @@
     flex-wrap: wrap;
 
     margin-top: 0px;
-    margin-top: negativeMargin($gap_2x);
-    margin-left: negativeMargin($gap_2x);
+    margin-top: negativeMargin($pentadeca-gap_2x);
+    margin-left: negativeMargin($pentadeca-gap_2x);
   }
 
   &__items {
-    margin-top: $gap_2x;
-    margin-left: $gap_2x;
-    flex-basis: flexElementWidth($gap_2x, 2);
-    height: flexElementWidth($gap_2x, 3);
+    margin-top: $pentadeca-gap_2x;
+    margin-left: $pentadeca-gap_2x;
+    flex-basis: flexElementWidth($pentadeca-gap_2x, 2);
+    height: flexElementWidth($pentadeca-gap_2x, 3);
 
     @include respond-from-min('tablet') {
-      flex-basis: flexElementWidth($gap_2x, 3);
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 3);
     }
 
     @include respond-from-min('desktop') {
-      flex-basis: flexElementWidth($gap_2x, 6);
+      flex-basis: flexElementWidth($pentadeca-gap_2x, 6);
     }
   }
 
@@ -29,7 +29,7 @@
   &__link {
     display: flex;
     align-items: center;
-    padding: 16px 0;
+    padding: $hexadeca-gap_1x 0;
 
     border-radius: 4px;
     border: 1px solid getColor('ternary-buttons');

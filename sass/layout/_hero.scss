@@ -58,16 +58,16 @@
 
   &__container {
     max-width: 360px;
-    padding: 118px 0;
+    padding: $xeno-gap_h 0;
 
     @include respond-from-min('desktop') {
       max-width: 696px;
-      padding: 200px 0;
+      padding: $deca-gap_20x 0;
     }
   }
 
   &__title {
-    margin-bottom: $gap_2x;
+    margin-bottom: $pentadeca-gap_2x;
     margin-top: 0;
     padding: 0;
 

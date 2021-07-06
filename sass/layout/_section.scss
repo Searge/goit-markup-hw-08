@@ -1,18 +1,18 @@
 .section {
-  padding: $gap_4x 0;
+  padding: $pentadeca-gap_4x 0;
 
   // Desktop styles
   @include respond-from-min('desktop') {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: $xeno-gap_g;
+    padding-bottom: $xeno-gap_g;
   }
 
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: $deca-gap_5x;
     color: getColor('secondary-text');
     font-weight: 700;
-    font-size: 36px;
+    font-size: $quaternary-size;
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
@@ -21,9 +21,8 @@
 
 // Wrapper
 .container {
-
-  padding-left: $gap_1x;
-  padding-right: $gap_1x;
+  padding-left: $pentadeca-gap_1x;
+  padding-right: $pentadeca-gap_1x;
 
   max-width: getWidth('mobile');
   margin-left: auto;
