@@ -678,6 +678,12 @@ video {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .spam {
+    margin-top: 0;
+  }
+}
+
 .form-subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,6 +1099,11 @@ video {
 @media screen and (min-width: 1200px) {
   .footer__container {
     text-align: left;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 

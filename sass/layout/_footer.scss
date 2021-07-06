@@ -27,6 +27,9 @@
 
     @include respond-from-min('desktop') {
       text-align: left;
+      flex-wrap: nowrap;
+
+      justify-content: start;
     }
   }
 

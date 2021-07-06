@@ -4,6 +4,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @include respond-from-min('desktop') {
+    margin-top: 0;
+  }
 }
 
 .form-subscribe {
@@ -18,7 +21,7 @@
     width: 100%;
     margin-bottom: 20px;
     @include respond-from-min('tablet') {
-      width: getWidth('mobileBox')
+      width: getWidth('mobileBox');
     }
     @include respond-from-min('desktop') {
       width: 358px;
