@@ -11,17 +11,21 @@
     color: getColor('accent');
   }
 
+  // Header Logo
   .header__container & {
     padding-top: 16px;
     padding-bottom: 16px;
     @include respond-from-min('tablet') {
       padding-top: 24px;
       padding-bottom: 24px;
-
     }
   }
 
+  // Footer Logo
   .address & {
     margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 1.16;
   }
 }

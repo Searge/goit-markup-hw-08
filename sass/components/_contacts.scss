@@ -21,7 +21,10 @@
   }
 
   .address &__item {
-    margin-top: 9px;
+    margin-top: 8px;
+    @include respond-from-min('desktop') {
+      margin-top: 9px;
+    }
   }
 
   .address &__link {
@@ -29,7 +32,7 @@
     color: $footer-links-color;
   }
 
-  // Tablet
+  // Tablet Menu
   @include respond-from-min('tablet') {
     .menu & {
       display: block;
@@ -53,7 +56,7 @@
       height: 16px;
     }
   }
-  // Desktop
+  // Desktop Menu
   @include respond-from-min('desktop') {
     .menu & {
       display: flex;

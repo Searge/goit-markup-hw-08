@@ -1,12 +1,17 @@
 .footer {
-  padding-top: $gap_2x;
-  padding-bottom: $gap_2x;
-
   background-color: getColor('ternary-bg');
   color: getColorInverted('primary-text');
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  padding-top: $gap_4x;
+  padding-bottom: $gap_4x;
+
+  @include respond-from-min('desktop') {
+    padding-top: $gap_2x;
+    padding-bottom: $gap_2x;
+  }
 
   &__container {
     max-width: getWidth('mobileBox');
@@ -31,7 +36,7 @@
 }
 
 .address {
-  margin-bottom: $gap_2x;
+  margin-bottom: $gap_4x;
 
   @include respond-from-min('desktop') {
     width: 231px;

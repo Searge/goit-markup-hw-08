@@ -221,6 +221,8 @@ video {
 
 .address .logo {
   margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.16;
 }
 
 .menu {
@@ -477,7 +479,13 @@ video {
 }
 
 .address .contacts__item {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address .contacts__item {
+    margin-top: 9px;
+  }
 }
 
 .address .contacts__link {
@@ -884,7 +892,7 @@ video {
 }
 
 .join {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1028,13 +1036,20 @@ video {
 }
 
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: #2f303a;
   color: #fff;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__container {
@@ -1063,7 +1078,7 @@ video {
 }
 
 .address {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
