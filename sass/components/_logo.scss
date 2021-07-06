@@ -11,9 +11,14 @@
     color: getColor('accent');
   }
 
-  .navigation & {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .header__container & {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include respond-from-min('tablet') {
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+    }
   }
 
   .address & {

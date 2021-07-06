@@ -88,7 +88,17 @@
     text-decoration: none;
   }
 
-  // Site Navigation
+  // Site Navigation Contacts Block
+  &__contacts {
+    @include respond-from-min('tablet') {
+      margin: 19px 0;
+    }
+    @include respond-from-min('desktop') {
+      margin: 0;
+    }
+  }
+
+  // Site Navigation Menu Block
   &__list {
     @include respond-from-min('tablet') {
       display: flex;
@@ -149,7 +159,7 @@
       opacity: 1;
     }
   }
-  
+
   // Menu Button
   &__button {
     position: absolute;

@@ -35,6 +35,10 @@
       display: block;
     }
 
+    .menu &__item:first-child {
+      margin-bottom: 10px;
+    }
+
     .menu &__link {
       display: flex;
       align-items: center;
@@ -55,8 +59,9 @@
       display: flex;
     }
 
-    .menu &__item {
-      margin-left: 50px;
+    .menu &__item:first-child {
+      margin-bottom: 0;
+      margin-right: 50px;
     }
 
     .menu &__link {
