@@ -408,10 +408,6 @@ video {
 }
 
 .menu__button {
-  position: fixed;
-  z-index: 1;
-  top: 10px;
-  right: 15px;
   width: 40px;
   height: 40px;
   margin: 0;
@@ -436,6 +432,13 @@ video {
 
 .menu__button:hover, .menu__button:focus {
   fill: #2196f3;
+}
+
+.menu__button.is-open {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
 }
 
 .menu__icon {
@@ -1010,13 +1013,22 @@ video {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
   .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

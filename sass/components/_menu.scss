@@ -164,11 +164,6 @@
 
   // Menu Button
   &__button {
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-    right: $gap_1x;
-
     width: 40px;
     height: 40px;
 
@@ -186,6 +181,13 @@
   &__button:hover,
   &__button:focus {
     fill: getColor('accent');
+  }
+
+  &__button.is-open {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: $gap_1x;
   }
 
   // Menu Button Icons
