@@ -8,19 +8,25 @@
   padding-top: $gap_4x;
   padding-bottom: $gap_4x;
 
+
   @include respond-from-min('desktop') {
     padding-top: $gap_2x;
     padding-bottom: $gap_2x;
   }
 
   &__container {
-    max-width: getWidth('mobileBox');
+
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min('tablet') {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include respond-from-min('desktop') {
       text-align: left;
     }
   }

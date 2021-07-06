@@ -10,7 +10,7 @@
   &__social {
     display: flex;
 
-    @include respond-to-max('tablet') {
+    @include respond-to-max('desktop') {
       justify-content: center;
     }
   }
