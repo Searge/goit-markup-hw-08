@@ -1,8 +1,7 @@
 .spam {
   @include respond-from-min('tablet') {
     margin-top: $gap_4x;
-    margin-left: auto;
-    margin-right: auto;
+
   }
   @include respond-from-min('desktop') {
     margin-top: 0;

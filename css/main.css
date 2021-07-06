@@ -685,8 +685,6 @@ video {
 @media screen and (min-width: 768px) {
   .spam {
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1111,9 +1109,8 @@ video {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
