@@ -31,7 +31,7 @@
       0px 2px 1px $backdrop-bg;
     border-radius: 0px 0px 4px 4px;
 
-    font-size: 16px;
+    font-size: $secondary-size;
     line-height: 1.18;
     text-align: center;
 
@@ -72,7 +72,7 @@
 
   &__title {
     color: getColor('secondary-text');
-    font-size: 16px;
+    font-size: $secondary-size;
     font-weight: 500;
   }
 

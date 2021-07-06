@@ -62,7 +62,7 @@
   &__title {
     margin: 0;
     color: getColor('secondary-text');
-    font-size: 18px;
+    font-size: $ternary-size;
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -71,7 +71,7 @@
   &__descriptioon {
     margin-top: 4px;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: $secondary-size;
     line-height: 1.8;
   }
 
@@ -91,7 +91,7 @@
     transition: transform 250ms $cubic, opacity 250ms $cubic;
 
     color: getColorInverted('primary-text');
-    font-size: 18px;
+    font-size: $ternary-size;
     line-height: 1.56;
   }
 

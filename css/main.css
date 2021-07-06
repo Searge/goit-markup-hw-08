@@ -199,8 +199,15 @@ video {
   color: inherit;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo--accent {
@@ -221,8 +228,6 @@ video {
 
 .address .logo {
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.16;
 }
 
 .menu {
@@ -301,13 +306,13 @@ video {
 .menu.is-open .contacts__item:last-child .contacts__link {
   color: #2196f3;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
 .menu.is-open .contacts__item:not(:last-child) .contacts__link {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 }
 
@@ -330,7 +335,7 @@ video {
 .menu .menu-social__link {
   color: #2196f3;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-decoration: none;
 }
 
@@ -370,8 +375,8 @@ video {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-size: 40px;
   font-weight: 500;
+  font-size: 40px;
   line-height: 1.17;
 }
 

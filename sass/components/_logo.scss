@@ -4,8 +4,12 @@
   color: inherit;
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: $logo-mobile-size;
+  line-height: 1.16;
+  @include respond-from-min('desktop') {
+    font-size: $logo-size;
+    line-height: 1.2;
+  }
 
   &--accent {
     color: getColor('accent');
@@ -24,8 +28,5 @@
   // Footer Logo
   .address & {
     margin-bottom: 20px;
-
-    font-size: 24px;
-    line-height: 1.16;
   }
 }

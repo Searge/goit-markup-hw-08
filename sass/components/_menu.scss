@@ -57,14 +57,14 @@
 
   &.is-open .contacts__item:last-child .contacts__link {
     color: getColor('accent');
-    font-size: 34px;
-    line-height: 40px;
+    font-size: $mobile-menu-phone;
+    line-height: 1.17;
     letter-spacing: 0.02em;
   }
 
   &.is-open .contacts__item:not(:last-child) .contacts__link {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: $mobile-menu-mail;
+    line-height: 1.16;
     letter-spacing: 0.02em;
   }
 
@@ -85,8 +85,8 @@
 
   .menu-social__link {
     color: getColor('accent');
-    font-size: 18px;
-    line-height: 22px;
+    font-size: $mobile-menu-social;
+    line-height: 1.22;
     text-decoration: none;
   }
 
@@ -121,8 +121,8 @@
     @include transition(color);
     text-decoration: none;
 
-    font-size: 40px;
     font-weight: 500;
+    font-size: $mobile-menu;
     line-height: 1.17;
 
     @include respond-from-min('tablet') {
@@ -131,7 +131,7 @@
       padding-top: 32px;
       padding-bottom: 32px;
 
-      font-size: 14px;
+      font-size: $main-size;
       line-height: 1.14;
     }
   }
