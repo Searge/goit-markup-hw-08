@@ -1,5 +1,5 @@
 .section {
-  padding: $gap_2x 0;
+  padding: $gap_4x 0;
 
   // Desktop styles
   @include respond-from-min('desktop') {
