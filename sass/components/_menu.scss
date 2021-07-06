@@ -10,23 +10,6 @@
     width: 100vw;
   }
 
-  &.is-open {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    padding: 48px 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-color: getColor('primary-bg');
-  }
-
   .navigation {
     display: none;
 
@@ -36,6 +19,25 @@
   }
   .contacts {
     display: none;
+  }
+
+  &.is-open {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    padding: 48px 40px;
+
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: getColor('primary-bg');
   }
 
   &.is-open .navigation {
@@ -162,7 +164,7 @@
 
   // Menu Button
   &__button {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 10px;
     right: $gap_1x;
