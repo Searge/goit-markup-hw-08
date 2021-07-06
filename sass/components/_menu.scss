@@ -2,6 +2,14 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
+  @include respond-from-min('tablet') {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+
+    width: 100vw;
+  }
+
   &.is-open {
     position: absolute;
     z-index: 1;
@@ -19,9 +27,14 @@
     background-color: getColor('primary-bg');
   }
 
-  .navigation,
-  .contacts,
-  .menu-social {
+  .navigation {
+    display: none;
+
+    @include respond-from-min('tablet') {
+      display: block;
+    }
+  }
+  .contacts {
     display: none;
   }
 
@@ -29,7 +42,7 @@
     display: block;
   }
 
-  // Contacts
+  // Contacts Mobile Styles
   &.is-open .contacts {
     display: flex;
     flex-direction: column-reverse;
@@ -53,7 +66,11 @@
     letter-spacing: 0.02em;
   }
 
-  // Social
+  // Menu Social Links in Mobile only
+  .menu-social {
+    display: none;
+  }
+
   &.is-open .menu-social {
     display: flex;
   }
@@ -71,18 +88,40 @@
     text-decoration: none;
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
+  // Site Navigation
+  &__list {
+    @include respond-from-min('tablet') {
+      display: flex;
+    }
   }
 
-  // Site nav
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+    @include respond-from-min('tablet') {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+
   &__link {
-    font-size: 40px;
-    line-height: 1.17;
     color: getColor('secondary-text');
     // transition: color 250ms $cubic;
     @include transition(color);
     text-decoration: none;
+
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.17;
+
+    @include respond-from-min('tablet') {
+      position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   &__link--current,
@@ -91,6 +130,26 @@
     color: getColor('accent');
   }
 
+  // Blue bar
+  &__link--current::after {
+    @include respond-from-min('tablet') {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+
+      content: '';
+      background-color: getColor('accent');
+      // transition: opacity 250ms $cubic;
+      @include transition(opacity);
+      opacity: 1;
+    }
+  }
+  
   // Menu Button
   &__button {
     position: absolute;
@@ -101,8 +160,8 @@
     width: 40px;
     height: 40px;
 
-    @include centered-flex();
     margin: 0;
+    @include centered-flex();
 
     border: none;
     background-color: transparent;
@@ -117,7 +176,7 @@
     fill: getColor('accent');
   }
 
-  // Icons
+  // Menu Button Icons
   &__icon {
     width: 24px;
     height: 16px;
@@ -134,56 +193,6 @@
   }
 
   &__button.is-open .icon-burger {
-    display: none;
-  }
-}
-
-// Desktop styles
-@include respond-from-min('tablet') {
-  .navigation,
-  .contacts,
-  .menu-social {
-    display: flex;
-  }
-
-  &__list {
-    display: flex;
-    margin-left: 90px;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  // Site nav
-  &__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    line-height: 1.14;
-  }
-
-  // Blue bar
-  &__link--current::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    content: '';
-    background-color: getColor('accent');
-    // transition: opacity 250ms $cubic;
-    @include transition(opacity);
-    opacity: 1;
-  }
-
-  &__button {
     display: none;
   }
 }
