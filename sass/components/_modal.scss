@@ -26,9 +26,9 @@
   position: relative;
 
   max-width: getWidth('mobileBox');
+
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
 
   opacity: 0;
   transition: opacity 250ms $cubic, transform 250ms $cubic;
@@ -43,6 +43,13 @@
     @include respond-from-min('tablet') {
       transform: translate(-50%, -50%) scale(1);
     }
+  }
+
+  &__content {
+    // Responsive height
+    height: calc(100% - $gap_2x);
+    padding: 40px;
+    overflow-y: auto;
   }
 
   &__close {

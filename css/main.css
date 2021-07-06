@@ -594,7 +594,6 @@ video {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
   opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -615,6 +614,12 @@ video {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
+}
+
+.modal__content {
+  height: calc(100% - $gap_2x);
+  padding: 40px;
+  overflow-y: auto;
 }
 
 .modal__close {
