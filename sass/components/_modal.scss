@@ -24,6 +24,10 @@
 
 .modal {
   position: relative;
+
+  max-width: getWidth('mobileBox');
+  margin-left: auto;
+  margin-right: auto;
   padding: 40px;
 
   opacity: 0;
@@ -80,7 +84,7 @@
   }
 
   // Desktop styles
-  @include respond-from-min('mobile') {
+  @include respond-from-min('tablet') {
     & {
       position: absolute;
       left: 50%;
