@@ -672,12 +672,6 @@ video {
 
 @media screen and (min-width: 768px) {
   .spam {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -720,6 +714,12 @@ video {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  .form-subscribe__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -909,11 +909,16 @@ video {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .join {
     width: 206px;
     margin-right: 93px;
-    margin-bottom: 0;
   }
 }
 
@@ -1079,8 +1084,9 @@ video {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1101,6 +1107,12 @@ video {
 
 .address {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {

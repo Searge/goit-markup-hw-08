@@ -1,7 +1,5 @@
 .spam {
   @include respond-from-min('tablet') {
-    align-self: flex-end;
-    flex-direction: column;
     margin-top: $gap_4x;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +17,9 @@
   &__input {
     width: 100%;
     margin-bottom: 20px;
+    @include respond-from-min('tablet') {
+      width: getWidth('mobileBox')
+    }
     @include respond-from-min('desktop') {
       width: 358px;
       margin-right: 12px;

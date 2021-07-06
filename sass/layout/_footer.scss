@@ -8,14 +8,12 @@
   padding-top: $gap_4x;
   padding-bottom: $gap_4x;
 
-
   @include respond-from-min('desktop') {
     padding-top: $gap_2x;
     padding-bottom: $gap_2x;
   }
 
   &__container {
-
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -23,7 +21,8 @@
     @include respond-from-min('tablet') {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+
+      justify-content: space-between;
     }
 
     @include respond-from-min('desktop') {
@@ -43,6 +42,10 @@
 
 .address {
   margin-bottom: $gap_4x;
+
+  @include respond-from-min('tablet') {
+    margin-bottom: 0;
+  }
 
   @include respond-from-min('desktop') {
     width: 231px;
