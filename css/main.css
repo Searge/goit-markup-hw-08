@@ -517,6 +517,16 @@ video {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu .contacts__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .contacts__icon {
     display: block;
     fill: currentColor;
