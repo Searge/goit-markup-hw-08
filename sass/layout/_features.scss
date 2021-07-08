@@ -35,6 +35,7 @@
 
     @include respond-from-min('desktop') {
       flex-basis: flexElementWidth($pentadeca-gap_2x, 4);
+      margin-top: 0;
     }
   }
 
