@@ -8,10 +8,6 @@
   padding-top: $pentadeca-gap_4x;
   padding-bottom: $pentadeca-gap_4x;
 
-  @include respond-from-min('desktop') {
-    padding-top: $pentadeca-gap_2x;
-    padding-bottom: $pentadeca-gap_2x;
-  }
 
   &__container {
     margin-right: auto;

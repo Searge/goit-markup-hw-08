@@ -622,7 +622,7 @@ video {
 }
 
 .modal__content {
-  height: calc(100% - $gap_2x);
+  height: calc(100% - $pentadeca-gap_2x);
   padding: 40px;
   overflow-y: auto;
 }
@@ -1092,13 +1092,6 @@ video {
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 .footer__container {
