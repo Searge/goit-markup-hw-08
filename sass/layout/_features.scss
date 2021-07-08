@@ -47,6 +47,11 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
+
+    @include respond-from-min('tablet') {
+      text-align: left;
+    }
   }
 
   &__description {
